@@ -146,6 +146,11 @@ const photos: UnmappedPhoto[] = [
 		assignment: "Symmetry Challenge",
 		path: "IMG_0934 Lightroom_2.jpg",
 	},
+	{
+		name: "Handful of Life",
+		assignment: "Hands in Frame Challenge",
+		path: "IMG_2808.JPG"
+	}
 ].sort((a, b) => sortOrder.indexOf(a.assignment) - sortOrder.indexOf(b.assignment));
 
 export default photos;
