@@ -1,4 +1,4 @@
-import { Box, Image, Button, VStack, Flex, AspectRatio, HStack } from "@chakra-ui/react";
+import { Box, Image, Button, VStack, Flex, HStack } from "@chakra-ui/react";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import { useState } from "react";
 import { Photo } from "../types/Photo";
@@ -13,7 +13,7 @@ function PhotoPresenter({ photos }: Props) {
 	function showPreviousPhoto() {
 		setCurrentPhotoIndex((oldIndex) => {
 			if (oldIndex === 0) {
-				return photos.length - 1; // Loop back to the last photo
+				return photos.length - 1;
 			} else {
 				return oldIndex - 1;
 			}
@@ -23,7 +23,7 @@ function PhotoPresenter({ photos }: Props) {
 	function showNextPhoto() {
 		setCurrentPhotoIndex((oldIndex) => {
 			if (oldIndex === photos.length - 1) {
-				return 0; // Loop back to the first photo
+				return 0;
 			} else {
 				return oldIndex + 1;
 			}
@@ -40,19 +40,28 @@ function PhotoPresenter({ photos }: Props) {
 
 	return (
 		<VStack spacing={4}>
-			<VStack>
+			<Box
+				display="flex"
+				justifyContent="center"
+				alignItems="center"
+				width="100%"
+				height="500px"
+				backgroundColor="white"
+			>
 				<Image
-					maxHeight={"500"}
+					boxSize="100%"
+					objectFit="contain"
 					src={src(photos[currentPhotoIndex])}
 					alt="Displayed photo"
 				/>
-				<HStack>
-					<Button onClick={showPreviousPhoto} leftIcon={<FaArrowLeft />} />
-					<Button onClick={showNextPhoto} rightIcon={<FaArrowRight />} />
-				</HStack>
-			</VStack>
+			</Box>
 
-			<Flex wrap="wrap" justify="center" p={1} rowGap={2}>
+			<HStack>
+				<Button onClick={showPreviousPhoto} leftIcon={<FaArrowLeft />} />
+				<Button onClick={showNextPhoto} rightIcon={<FaArrowRight />} />
+			</HStack>
+
+			<Flex wrap="wrap" justify="center" p={1} gap={2}>
 				{photos.map((photo, index) => (
 					<Box
 						boxSize="80px"
@@ -62,9 +71,12 @@ function PhotoPresenter({ photos }: Props) {
 						onClick={() => selectPhoto(index)}
 						key={index}
 					>
-						<AspectRatio ratio={16 / 9} maxW="80px">
-							<Image src={src(photo)} alt={`Photo thumbnail ${index + 1}`} />
-						</AspectRatio>
+						<Image
+							boxSize="100%"
+							objectFit="cover"
+							src={src(photo)}
+							alt={`Photo thumbnail ${index + 1}`}
+						/>
 					</Box>
 				))}
 			</Flex>
