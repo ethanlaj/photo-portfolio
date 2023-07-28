@@ -1,6 +1,24 @@
-import { Photo } from "./types/Photo";
+import { UnmappedPhoto } from "./types/Photo";
 
-const photos: Photo[] = [
+const sortOrder = [
+	"Compositional Scavenger Hunt",
+	"Environmental Portrait",
+	"Animal",
+	"Photo Walk",
+	"Architecture",
+	"Artistic Expression",
+	"Still Life",
+	"Symmetry Challenge",
+	"Black and White",
+	"Signs Challenge",
+	"Natural Frames Challenge",
+	"Hands in Frame Challenge",
+	"Light Painting",
+	"Shutter Priority",
+	"Aperture Priority",
+];
+
+const photos: UnmappedPhoto[] = [
 	{
 		name: "Quack in the Park",
 		assignment: "Animal",
@@ -127,7 +145,7 @@ const photos: Photo[] = [
 		name: "Nature's Eye: Reflections on Water",
 		assignment: "Symmetry",
 		path: "IMG_0934 Lightroom_2.jpg",
-	}
-];
+	},
+].sort((a, b) => sortOrder.indexOf(a.assignment) - sortOrder.indexOf(b.assignment));
 
 export default photos;
