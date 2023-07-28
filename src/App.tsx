@@ -6,13 +6,15 @@ import photos from "./photos";
 
 function App() {
 	return (
-		<Box maxWidth="1200px" margin="0 auto">
-			<VStack spacing={10}>
-				<PhotoProvider photos={photos}>
-					<Header />
-					<Portfolio />
-				</PhotoProvider>
-			</VStack>
+		<Box bg="gray.50">
+			<Header />
+			<Box maxWidth="1200px" margin="0 auto">
+				<VStack spacing={1}>
+					<PhotoProvider photos={photos}>
+						<Portfolio />
+					</PhotoProvider>
+				</VStack>
+			</Box>
 		</Box>
 	);
 }

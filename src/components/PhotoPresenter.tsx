@@ -15,7 +15,6 @@ function PhotoPresenter() {
 				alignItems="center"
 				width="100%"
 				height="500px"
-				backgroundColor="white"
 			>
 				<Photo key={currentPhotoIndex} src={currentPhoto.src} alt="Displayed photo" />
 			</Box>

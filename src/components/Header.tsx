@@ -1,14 +1,21 @@
-import { Flex, Heading, useColorModeValue } from "@chakra-ui/react";
+import { Flex, Heading } from "@chakra-ui/react";
 
 function Header() {
-  const bg = useColorModeValue('teal.400', 'blue.900');
-  const color = useColorModeValue('black', 'white');
-
-  return (
-    <Flex as="nav" py={4} px={8} bg={bg} color={color} align="center" justify="space-between">
-      <Heading size="lg">My Photography Portfolio</Heading>
-    </Flex>
-  );
+	return (
+		<Flex
+			as="nav"
+			w="100%"
+			py={4}
+			px={{ base: 4, md: 8 }}
+			bg="gray.200"
+			color="gray.700"
+			align="center"
+			justify="space-between"
+			boxShadow={"sm"}
+		>
+			<Heading size="lg">Photography by Ethan Lajeunesse</Heading>
+		</Flex>
+	);
 }
 
 export default Header;
