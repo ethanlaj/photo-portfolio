@@ -3,13 +3,13 @@ import { UnmappedPhoto } from "./types/Photo";
 const sortOrder = [
 	"Compositional Scavenger Hunt",
 	"Environmental Portrait",
-	"Animal",
+	"Pet or Animal",
 	"Photo Walk",
 	"Architecture",
 	"Artistic Expression",
 	"Still Life",
 	"Symmetry Challenge",
-	"Black and White",
+	"Black and White Challenge",
 	"Signs Challenge",
 	"Natural Frames Challenge",
 	"Hands in Frame Challenge",
@@ -21,7 +21,7 @@ const sortOrder = [
 const photos: UnmappedPhoto[] = [
 	{
 		name: "Quack in the Park",
-		assignment: "Animal",
+		assignment: "Pet or Animal",
 		path: "IMG_9857.jpg",
 	},
 	{
@@ -43,7 +43,7 @@ const photos: UnmappedPhoto[] = [
 	},
 	{
 		name: "Through the Arches",
-		assignment: "Black and White",
+		assignment: "Black and White Challenge",
 		path: "IMG_1310.JPG",
 	},
 	{
@@ -79,7 +79,7 @@ const photos: UnmappedPhoto[] = [
 		path: "Lajeunesse-10-IMG_9341.jpeg",
 	},
 	{
-		assignment: "Depth of Field",
+		assignment: "Aperture Priority",
 		path: "IMG_9792.jpg",
 	},
 	{
@@ -109,31 +109,31 @@ const photos: UnmappedPhoto[] = [
 	},
 	{
 		name: "Life From Ashes",
-		assignment: "Natural Frame",
+		assignment: "Natural Frames Challenge",
 		path: "IMG_1207.JPG",
 	},
 	{
 		name: "Trails of Light: Photography on Green Lane",
-		assignment: "Nature Photo Walk",
+		assignment: "Photo Walk",
 		path: "Lajeunesse-CU-IMG_9709.JPG",
 	},
 	{
 		name: "Trails of Light: Photography on Green Lane",
-		assignment: "Nature Photo Walk",
+		assignment: "Photo Walk",
 		path: "Lajeunesse-LS-IMG_9666.JPG",
 	},
 	{
 		name: "Trails of Light: Photography on Green Lane",
-		assignment: "Nature Photo Walk",
+		assignment: "Photo Walk",
 		path: "Lajeunesse-MS-IMG_9723.JPG",
 	},
 	{
-		assignment: "Shutter Speed",
+		assignment: "Shutter Priority",
 		path: "IMG_9815.JPG",
 	},
 	{
 		name: "Signs of Transit",
-		assignment: "Signs",
+		assignment: "Signs Challenge",
 		path: "IMG_1798.JPG",
 	},
 	{
@@ -143,7 +143,7 @@ const photos: UnmappedPhoto[] = [
 	},
 	{
 		name: "Nature's Eye: Reflections on Water",
-		assignment: "Symmetry",
+		assignment: "Symmetry Challenge",
 		path: "IMG_0934 Lightroom_2.jpg",
 	},
 ].sort((a, b) => sortOrder.indexOf(a.assignment) - sortOrder.indexOf(b.assignment));
