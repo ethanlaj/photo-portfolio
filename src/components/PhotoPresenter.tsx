@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Text } from "@chakra-ui/react";
 import PresenterArrows from "./PresenterArrows";
 import Photo from "./Photo";
 import { usePhotoSelector } from "../hooks/usePhotoSelector";
@@ -10,6 +10,7 @@ function PhotoPresenter() {
 		<>
 			<Box
 				display="flex"
+				flexDirection="column"
 				justifyContent="center"
 				alignItems="center"
 				width="100%"
@@ -18,8 +19,15 @@ function PhotoPresenter() {
 			>
 				<Photo key={currentPhotoIndex} src={currentPhoto.src} alt="Displayed photo" />
 			</Box>
-
-			<PresenterArrows />
+			<Box display="flex" flexDirection="column" alignItems="center" rowGap={5}>
+				<Box display="flex" flexDirection="column" alignItems="center">
+					<Text visibility={currentPhoto.name == null ? "hidden" : "unset"}>
+						"{currentPhoto.name}"
+					</Text>
+					<Text>{currentPhoto.assignment}</Text>
+				</Box>
+				<PresenterArrows />
+			</Box>
 		</>
 	);
 }
