@@ -137,12 +137,12 @@ const photos: UnmappedPhoto[] = [
 	{
 		name: '"Trails of Light: Photography on Green Lane"',
 		assignment: "Photo Walk",
-		path: "Lajeunesse-LS-IMG_9666.JPG",
+		path: "Lajeunesse-LS-IMG_9666-2.jpg",
 	},
 	{
 		name: '"Trails of Light: Photography on Green Lane"',
 		assignment: "Photo Walk",
-		path: "Lajeunesse-MS-IMG_9723.JPG",
+		path: "Lajeunesse-MS-IMG_9723-2.jpg",
 	},
 	{
 		name: "Slow Shutter Speed",
