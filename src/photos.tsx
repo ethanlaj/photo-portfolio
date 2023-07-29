@@ -32,7 +32,7 @@ const photos: UnmappedPhoto[] = [
 	{
 		name: "Full Shot",
 		assignment: "Architecture",
-		path: "Lajeunesse-FS-IMG_0671.JPG",
+		path: "Lajeunesse-FS-IMG_0671-2.JPG",
 	},
 	{
 		name: "Medium Shot",
