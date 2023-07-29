@@ -22,7 +22,7 @@ const photos: UnmappedPhoto[] = [
 	{
 		name: '"Quack in the Park"',
 		assignment: "Pet or Animal",
-		path: "IMG_9857.jpg",
+		path: "IMG_9857-2.jpg",
 	},
 	{
 		name: "Close Up",
