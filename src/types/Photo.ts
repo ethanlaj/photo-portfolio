@@ -1,5 +1,5 @@
 export type UnmappedPhoto = {
-	name?: string;
+	name: string;
 	assignment: string;
 	path: string;
 }

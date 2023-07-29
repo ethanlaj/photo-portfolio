@@ -21,7 +21,7 @@ function PhotoPresenter() {
 			<Box display="flex" flexDirection="column" alignItems="center" rowGap={5}>
 				<Box display="flex" flexDirection="column" alignItems="center">
 					<Text visibility={currentPhoto.name == null ? "hidden" : "unset"}>
-						"{currentPhoto.name}"
+						{currentPhoto.name}
 					</Text>
 					<Text>{currentPhoto.assignment}</Text>
 				</Box>
