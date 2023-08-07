@@ -157,7 +157,7 @@ const photos: UnmappedPhoto[] = [
 	{
 		name: '"Photographer\'s Passion"',
 		assignment: "Still Life",
-		path: "Lajeunesse-IMG_2456.JPG",
+		path: "Lajeunesse-IMG_2456-2.JPG",
 	},
 	{
 		name: '"Nature\'s Eye: Reflections on Water"',
